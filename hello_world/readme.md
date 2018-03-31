@@ -11,17 +11,17 @@
 
 ## Source TensorflowJS Script
 * We use a CDN to load TensorflowJS script
-    > '<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.6.1"></script>'
+    > <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.6.1"></script>
 
 ## Define the (shallow) network
 * We will create a shallow network, and use MSE for the loss function, along with an [Adam optimizer](https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/).
-    > const model = tf.sequential();
-    > model.add(tf.layers.dense({ units: 1, inputShape: [1] }));
+    > const model = tf.sequential(); <BR>
+    > model.add(tf.layers.dense({ units: 1, inputShape: [1] })); <BR>
     > model.compile({ loss: 'meanSquaredError', optimizer: 'adam' });
 
 ## Define the training data set
 * xs = inputs, ys = outputs
-    > const xs = tf.tensor2d([1, 8, 7, 9, 10], [5, 1]);
+    > const xs = tf.tensor2d([1, 8, 7, 9, 10], [5, 1]); <BR>
     > const ys = tf.tensor2d([1, 12, 13, 15, 17], [5, 1]);
 
 ## Train the model

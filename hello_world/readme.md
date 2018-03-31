@@ -9,6 +9,8 @@
 
 # Code Walkthrough
 
+> <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.6.1"></script>
+
 
 # Output
 [output]: images/output.png "Output"

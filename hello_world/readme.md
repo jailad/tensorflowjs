@@ -36,3 +36,9 @@
 # Output
 [output]: images/output.png "Output"
 ![alt text][output]
+
+# Why use JavaScript for ML ?
+* Client-side compute translates to user privacy.
+* Client-side compute translates to reduced latency.
+* Excellent for tinkering via minimal setup.
+* Potentially a cross-platform ML solution based on the use of browsers.

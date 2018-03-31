@@ -10,9 +10,11 @@
 # Code Walkthrough
 
 ## Source TensorflowJS Script
+* We use a CDN to load TensorflowJS script
     > '<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.6.1"></script>'
 
 ## Define the (shallow) network
+* We will create a shallow network, and use MSE for the loss function, along with an [Adam optimizer](https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/).
     > const model = tf.sequential();
     > model.add(tf.layers.dense({ units: 1, inputShape: [1] }));
     > model.compile({ loss: 'meanSquaredError', optimizer: 'adam' });
